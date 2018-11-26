@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      /* Your styles here! */
+
+      .wrap {
+          display: 100%;
+          /*border: 1px solid red; */
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .container {
+          height: 400px;
+          width: 70%;
+          border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .input > input {
+          border-radius: 100px;
+          background-color: #c7ecee;
+          border-radius: 5px;
+          padding: .5em;
+      }
+
+      body, html {
+          height: 100%;
+          font-family: Helvetica;
+          margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html elements -->
+
+    <p>
+      <label for="amount">Bill</label>
+      <input id="amount" type="number" value="0.00">
+    </p>
+
+    <p>
+      <label for="percent">Tip %</label>
+      <input id="percent" type="number" value="15">
+    </p>
+
+    <button id="calculate">Calculate</button>
+
+    <p>
+      <span>Tip:</span>
+      <span id="tip">0.00</span>
+    </p>
+
+    <p>
+      <span>Total:</span>
+      <span id="total">0.00</span>
+    </p>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
